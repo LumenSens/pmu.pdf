@@ -1,34 +1,30 @@
 # NOVA PMU — Reboot 2026
 
-Ce dossier devient la **source de vérité active** du projet PMU à partir du 13 septembre 2026.
-
-Le reste du dépôt (`Pmu version nova 1.pdf`, `nova 2`, `nova 3`, `nova 4`, anciennes synthèses, tableurs, etc.) est conservé comme **archive historique**. Ces documents peuvent fournir des idées ou des données de contexte, mais ils ne définissent plus la méthode active.
+Ce dossier est la **source de vérité active** du projet PMU depuis le 13 septembre 2026. Les PDF et tableurs à la racine sont des archives historiques : ils peuvent inspirer ou documenter, mais ne définissent plus la méthode active.
 
 ## Mission
 
-Construire un système de recherche PMU rigoureux capable de détecter des situations où le marché pourrait être mal évalué, sans chercher à forcer une « formule magique » de prédiction.
+Construire un laboratoire de recherche capable de détecter des situations où le marché PMU pourrait être mal évalué, sans forcer une « formule magique ».
 
-La priorité est la **robustesse hors échantillon**, pas le ROI apparent sur l'historique.
+> **COURSE → MARCHÉ → CHEVAUX → DÉCISION**
 
-## Principe directeur
+La priorité est la robustesse hors échantillon. Une hypothèse doit survivre à des tests chronologiques, une analyse de sensibilité et une tentative explicite de réfutation.
 
-> COURSE → MARCHÉ → CHEVAUX → DÉCISION
+## Étape 0 — terminée sur le plan documentaire
 
-Le système doit d'abord sélectionner les courses intéressantes, ensuite analyser le marché et les partants, puis seulement décider s'il existe une anomalie suffisamment solide pour justifier un pari.
+- [00_ETAT_DU_PROJET.md](00_ETAT_DU_PROJET.md) — état, résultats rapportés et décisions verrouillées.
+- [01_PROTOCOLE_EXPERIMENTAL.md](01_PROTOCOLE_EXPERIMENTAL.md) — règles obligatoires de validation.
+- [02_REGISTRE_HYPOTHESES.md](02_REGISTRE_HYPOTHESES.md) — mémoire des pistes anciennes et nouvelles.
+- [03_AUDIT_DONNEES.md](03_AUDIT_DONNEES.md) — inventaire, confiance et contrôles.
+- [04_ARCHITECTURE_AGENTS.md](04_ARCHITECTURE_AGENTS.md) — rôles de Mathieu, ChatGPT, Grok et agents.
+- [05_PLAN_SPRINT_1.md](05_PLAN_SPRINT_1.md) — reprise opérationnelle.
 
-## Documents de l'étape 0
+## Statut exact
 
-- `00_ETAT_DU_PROJET.md` — état actuel, acquis, limites et décisions.
-- `01_PROTOCOLE_EXPERIMENTAL.md` — règles obligatoires de validation.
-- `02_REGISTRE_HYPOTHESES.md` — mémoire des idées testées, rejetées et ouvertes.
-- `03_AUDIT_DONNEES.md` — inventaire et niveau de confiance des données.
-- `04_ARCHITECTURE_AGENTS.md` — rôles de ChatGPT, Grok et agents spécialisés.
-- `05_PLAN_SPRINT_1.md` — reprise opérationnelle après l'étape 0.
+**Relance autorisée comme programme de recherche. Aucune stratégie de pari n'est validée.**
 
-## Règle absolue
+Les anciens chiffres sont classés « rapportés/non reproduits », car la base exacte des 24 973 courses, les scripts V12/A-D et leurs sorties ne sont pas encore versionnés ici.
 
-Une hypothèse n'est jamais déclarée « bonne » parce qu'elle gagne sur l'ensemble de l'historique. Elle doit survivre à des tests chronologiques indépendants, à une analyse de sensibilité et à une tentative explicite de réfutation.
+## Prochaine action
 
-## Statut
-
-**Étape 0 : fondations méthodologiques — créée le 13/09/2026.**
+Retrouver sur le PC Windows la base 4 ans et les scripts/sorties V12, A-D, P12 et E2, sans les renommer ni les modifier. Le Sprint 1 commencera par leur empreinte, l'audit des données et la reproduction d'un ancien résultat.
