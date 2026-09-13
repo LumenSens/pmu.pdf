@@ -4,17 +4,20 @@
 
 Rendre l'ancien projet reproductible avant d'inventer une nouvelle stratégie.
 
-## Ordre strict
+## Progression au 13/09/2026
 
-1. Retrouver la base 4 ans, les scripts V12/A-D et leurs sorties.
-2. Copier ces actifs dans une zone d'import sans modifier les originaux.
-3. Calculer leurs empreintes et documenter source, période et schéma.
-4. Exécuter l'audit de données.
-5. Reproduire au moins un ancien résultat de bout en bout.
-6. Si impossible, le déclarer officiellement non reproductible et expliquer pourquoi.
-7. Figer le dataset de référence et le futur holdout.
-8. Choisir ensuite une première hypothèse N1 ou N3.
-9. Étudier en parallèle la collecte légale de cotes horodatées.
+- [x] Retrouver la base 4 ans, V12/A-D et les scripts P12/E2.
+- [x] Contrôler l'intégrité SQLite et calculer les empreintes principales.
+- [x] Reproduire V6 P12/E2/portefeuille.
+- [x] Reproduire V12 branche D et le chargement des 24 973 courses.
+- [ ] Conserver une copie de référence immuable de l'archive.
+- [ ] Auditer complètement valeurs, plages, cotes et fuites temporelles.
+- [ ] Documenter Python et les dépendances.
+- [ ] Figer dataset de référence et futur holdout.
+- [ ] Choisir ensuite seulement N1 ou N3.
+- [ ] Étudier la collecte légale de cotes horodatées.
+
+Voir [06_AUDIT_ARCHIVE_RECUPEREE.md](06_AUDIT_ARCHIVE_RECUPEREE.md) pour les preuves, empreintes et résultats exacts.
 
 ## Arborescence cible
 
@@ -26,18 +29,15 @@ NOVA_REBOOT_2026/
   reports/
 ```
 
-Les gros fichiers ou données sous licence peuvent rester hors Git ; Git conserve alors manifeste, empreintes et instructions de reconstruction, jamais des secrets.
+Les gros fichiers ou données sous licence peuvent rester hors Git. Git conserve alors manifeste, empreintes et instructions de reconstruction, jamais des secrets.
 
-## Critère de passage
+## Critère de passage à une nouvelle expérience
 
-Le Sprint 1 ne lance une nouvelle expérience que lorsque :
+- audit complet produit ;
+- données et environnement identifiables ;
+- holdout défini avant le test ;
+- hypothèse enregistrée selon le protocole.
 
-- la base source est retrouvée et identifiable ;
-- l'audit produit un rapport ;
-- un résultat ancien est reproduit ou déclaré non reproductible ;
-- le holdout futur est défini avant tout nouveau test ;
-- le registre est opérationnel.
+## Prochaine action
 
-## Première action demandée à Mathieu
-
-Localiser sur le PC Windows le dossier contenant le CSV/parquet des 24 973 courses et les scripts nommés autour de V12, branche A/B/C/D, P12 ou E2, sans renommer ni éditer les fichiers.
+Faire l'audit scientifique complet, puis définir la frontière chronologique du holdout sans regarder ses performances.
